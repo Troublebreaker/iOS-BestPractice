@@ -1,4 +1,7 @@
 #import "SceneDelegate.h"
+#import "GTNewsViewController.h"
+#import "GTVideoViewController.h"
+#import "GTRecommandViewController.h"
 
 @interface SceneDelegate ()
 
@@ -8,9 +11,53 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    
+    if (@available(iOS 13.0, *)) {
+        UIWindowScene * windowScene = (UIWindowScene *)scene;
+        self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+        self.window.frame = windowScene.coordinateSpace.bounds;
+    } else {
+        // Fallback on earlier versions
+    }
+
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+
+    GTNewsViewController *controller1= [[GTNewsViewController alloc] init];
+//    controller1.view.backgroundColor = [UIColor redColor];
+    controller1.tabBarItem.title = @"新闻";
+    controller1.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/news_normal"];
+    controller1.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/news_slected"];
+    
+    
+    
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller1];
+//    navigationController.view.backgroundColor = [UIColor redColor];
+//    navigationController.tabBarItem.title = @"新闻";
+//    navigationController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/news_normal"];
+//    navigationController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/news_slected"];
+//
+    
+    GTVideoViewController *controller2= [[GTVideoViewController alloc] init];
+  
+    
+    GTRecommandViewController *controller3= [[GTRecommandViewController alloc] init];
+    controller3.tabBarItem.title = @"推荐";
+    controller3.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/recommand_normal"];
+    controller3.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/recommand_slected@2x.png"];
+
+    UIViewController *controller4= [[UIViewController alloc] init];
+    controller4.view.backgroundColor = [UIColor lightGrayColor];
+    controller4.tabBarItem.title = @"我的";
+    controller4.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/person_normal"];
+    controller4.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/person_slected@2x.png"];
+
+    [tabBarController setViewControllers:@[controller1,controller2,controller3,controller3,controller4]];
+
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabBarController];
+    self.window.rootViewController = navigationController;
+    
+    [self.window makeKeyAndVisible];
+    
 }
 
 

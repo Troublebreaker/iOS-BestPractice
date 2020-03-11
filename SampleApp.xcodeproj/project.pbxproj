@@ -3,32 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4C12CEF4240CD59A00AEC9DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CEF3240CD59A00AEC9DF /* AppDelegate.m */; };
 		4C12CEF7240CD59A00AEC9DF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CEF6240CD59A00AEC9DF /* SceneDelegate.m */; };
-		4C12CEFA240CD59A00AEC9DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CEF9240CD59A00AEC9DF /* ViewController.m */; };
+		4C12CEFA240CD59A00AEC9DF /* GTNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CEF9240CD59A00AEC9DF /* GTNewsViewController.m */; };
 		4C12CEFD240CD59A00AEC9DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C12CEFB240CD59A00AEC9DF /* Main.storyboard */; };
 		4C12CEFF240CD59C00AEC9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C12CEFE240CD59C00AEC9DF /* Assets.xcassets */; };
 		4C12CF02240CD59C00AEC9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C12CF00240CD59C00AEC9DF /* LaunchScreen.storyboard */; };
 		4C12CF05240CD59C00AEC9DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF04240CD59C00AEC9DF /* main.m */; };
+		4C12CF0C240D174200AEC9DF /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C12CF0B240D174200AEC9DF /* icon.bundle */; };
+		4C12CF0F240D3E4700AEC9DF /* GTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF0E240D3E4700AEC9DF /* GTVideoViewController.m */; };
+		4C12CF12240E34FF00AEC9DF /* GTRecommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF11240E34FF00AEC9DF /* GTRecommandViewController.m */; };
+		4C12CF15240E351C00AEC9DF /* GTNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF14240E351C00AEC9DF /* GTNormalTableViewCell.m */; };
+		4C12CF18240E562A00AEC9DF /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF17240E562A00AEC9DF /* GTDetailViewController.m */; };
+		4C12CF1B240E6C5700AEC9DF /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF1A240E6C5700AEC9DF /* GTDeleteCellView.m */; };
+		4C12CF20240F42C600AEC9DF /* GTListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF1F240F42C600AEC9DF /* GTListLoader.m */; };
+		4C12CF27240F785D00AEC9DF /* GTListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF26240F785D00AEC9DF /* GTListItem.m */; };
+		4C576CC02411FC8300D6A4EC /* SDWebImage.framework in Sources */ = {isa = PBXBuildFile; fileRef = 4C9240EA2411F12800903481 /* SDWebImage.framework */; };
+		4C576CC42412021B00D6A4EC /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9240E82411F10D00903481 /* AFNetworking.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4C9240EB2411F12800903481 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9240EA2411F12800903481 /* SDWebImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4CA55AF624110D3500927A73 /* GTVideoCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA55AF524110D3500927A73 /* GTVideoCoverView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0892DE70B9AA7856CBC26AB5 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		4C12CEEF240CD59A00AEC9DF /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C12CEF2240CD59A00AEC9DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C12CEF3240CD59A00AEC9DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4C12CEF5240CD59A00AEC9DF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		4C12CEF6240CD59A00AEC9DF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		4C12CEF8240CD59A00AEC9DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4C12CEF9240CD59A00AEC9DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4C12CEF8240CD59A00AEC9DF /* GTNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNewsViewController.h; sourceTree = "<group>"; };
+		4C12CEF9240CD59A00AEC9DF /* GTNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNewsViewController.m; sourceTree = "<group>"; };
 		4C12CEFC240CD59A00AEC9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C12CEFE240CD59C00AEC9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C12CF01240CD59C00AEC9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C12CF03240CD59C00AEC9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C12CF04240CD59C00AEC9DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C12CF0B240D174200AEC9DF /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
+		4C12CF0D240D3E4700AEC9DF /* GTVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoViewController.h; sourceTree = "<group>"; };
+		4C12CF0E240D3E4700AEC9DF /* GTVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoViewController.m; sourceTree = "<group>"; };
+		4C12CF10240E34FF00AEC9DF /* GTRecommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTRecommandViewController.h; sourceTree = "<group>"; };
+		4C12CF11240E34FF00AEC9DF /* GTRecommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTRecommandViewController.m; sourceTree = "<group>"; };
+		4C12CF13240E351C00AEC9DF /* GTNormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNormalTableViewCell.h; sourceTree = "<group>"; };
+		4C12CF14240E351C00AEC9DF /* GTNormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNormalTableViewCell.m; sourceTree = "<group>"; };
+		4C12CF16240E562900AEC9DF /* GTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDetailViewController.h; sourceTree = "<group>"; };
+		4C12CF17240E562A00AEC9DF /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
+		4C12CF19240E6C5700AEC9DF /* GTDeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDeleteCellView.h; sourceTree = "<group>"; };
+		4C12CF1A240E6C5700AEC9DF /* GTDeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDeleteCellView.m; sourceTree = "<group>"; };
+		4C12CF1E240F42C600AEC9DF /* GTListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListLoader.h; sourceTree = "<group>"; };
+		4C12CF1F240F42C600AEC9DF /* GTListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListLoader.m; sourceTree = "<group>"; };
+		4C12CF25240F785D00AEC9DF /* GTListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListItem.h; sourceTree = "<group>"; };
+		4C12CF26240F785D00AEC9DF /* GTListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListItem.m; sourceTree = "<group>"; };
+		4C576CC22411FD1500D6A4EC /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		4C9240E82411F10D00903481 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../Library/Developer/Xcode/DerivedData/SampleApp-fnfrlkuahbfxqidsgcprtrnqhtur/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		4C9240EA2411F12800903481 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../Library/Developer/Xcode/DerivedData/SampleApp-fnfrlkuahbfxqidsgcprtrnqhtur/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework"; sourceTree = "<group>"; };
+		4C9241052411F26700903481 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SampleApp.framework; path = "../../Library/Developer/Xcode/DerivedData/SampleApp-fnfrlkuahbfxqidsgcprtrnqhtur/Build/Products/Debug-iphoneos/Pods_SampleApp.framework"; sourceTree = "<group>"; };
+		4CA55AF424110D3500927A73 /* GTVideoCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoCoverView.h; sourceTree = "<group>"; };
+		4CA55AF524110D3500927A73 /* GTVideoCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoCoverView.m; sourceTree = "<group>"; };
+		7CC7DF3717C1D7D11360B47A /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C576CC42412021B00D6A4EC /* AFNetworking.framework in Frameworks */,
+				4C9240EB2411F12800903481 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +84,8 @@
 			children = (
 				4C12CEF1240CD59A00AEC9DF /* SampleApp */,
 				4C12CEF0240CD59A00AEC9DF /* Products */,
+				C901336E56B77F690F1B88FF /* Pods */,
+				8587062C9146C47C8FE991AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +100,137 @@
 		4C12CEF1240CD59A00AEC9DF /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CA55AED2411099200927A73 /* Videos */,
+				4C12CF1C240F427900AEC9DF /* News */,
+				4C12CF0B240D174200AEC9DF /* icon.bundle */,
 				4C12CEF2240CD59A00AEC9DF /* AppDelegate.h */,
 				4C12CEF3240CD59A00AEC9DF /* AppDelegate.m */,
 				4C12CEF5240CD59A00AEC9DF /* SceneDelegate.h */,
 				4C12CEF6240CD59A00AEC9DF /* SceneDelegate.m */,
-				4C12CEF8240CD59A00AEC9DF /* ViewController.h */,
-				4C12CEF9240CD59A00AEC9DF /* ViewController.m */,
 				4C12CEFB240CD59A00AEC9DF /* Main.storyboard */,
 				4C12CEFE240CD59C00AEC9DF /* Assets.xcassets */,
 				4C12CF00240CD59C00AEC9DF /* LaunchScreen.storyboard */,
 				4C12CF03240CD59C00AEC9DF /* Info.plist */,
 				4C12CF04240CD59C00AEC9DF /* main.m */,
+				4C12CF10240E34FF00AEC9DF /* GTRecommandViewController.h */,
+				4C12CF11240E34FF00AEC9DF /* GTRecommandViewController.m */,
 			);
 			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		4C12CF1C240F427900AEC9DF /* News */ = {
+			isa = PBXGroup;
+			children = (
+				4C12CF24240F780B00AEC9DF /* detail */,
+				4C12CF23240F77FD00AEC9DF /* Controller */,
+				4C12CF22240F77F200AEC9DF /* View */,
+				4C12CF21240F77EA00AEC9DF /* Model */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		4C12CF21240F77EA00AEC9DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C12CF1E240F42C600AEC9DF /* GTListLoader.h */,
+				4C12CF1F240F42C600AEC9DF /* GTListLoader.m */,
+				4C12CF25240F785D00AEC9DF /* GTListItem.h */,
+				4C12CF26240F785D00AEC9DF /* GTListItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C12CF22240F77F200AEC9DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C12CF13240E351C00AEC9DF /* GTNormalTableViewCell.h */,
+				4C12CF14240E351C00AEC9DF /* GTNormalTableViewCell.m */,
+				4C12CF19240E6C5700AEC9DF /* GTDeleteCellView.h */,
+				4C12CF1A240E6C5700AEC9DF /* GTDeleteCellView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C12CF23240F77FD00AEC9DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C12CEF8240CD59A00AEC9DF /* GTNewsViewController.h */,
+				4C12CEF9240CD59A00AEC9DF /* GTNewsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C12CF24240F780B00AEC9DF /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				4C12CF16240E562900AEC9DF /* GTDetailViewController.h */,
+				4C12CF17240E562A00AEC9DF /* GTDetailViewController.m */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		4C576CC12411FD1500D6A4EC /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				4C576CC22411FD1500D6A4EC /* SDWebImage.framework */,
+			);
+			name = SDWebImage;
+			path = "../../Library/Developer/Xcode/DerivedData/SampleApp-fnfrlkuahbfxqidsgcprtrnqhtur/Build/Products/Debug-iphoneos/SDWebImage";
+			sourceTree = "<group>";
+		};
+		4CA55AED2411099200927A73 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				4CA55AF0241109AE00927A73 /* Model */,
+				4CA55AEF241109A800927A73 /* View */,
+				4CA55AEE2411099F00927A73 /* Controller */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		4CA55AEE2411099F00927A73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C12CF0D240D3E4700AEC9DF /* GTVideoViewController.h */,
+				4C12CF0E240D3E4700AEC9DF /* GTVideoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CA55AEF241109A800927A73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CA55AF424110D3500927A73 /* GTVideoCoverView.h */,
+				4CA55AF524110D3500927A73 /* GTVideoCoverView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CA55AF0241109AE00927A73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8587062C9146C47C8FE991AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C576CC12411FD1500D6A4EC /* SDWebImage */,
+				4C9241052411F26700903481 /* Pods_SampleApp.framework */,
+				4C9240EA2411F12800903481 /* SDWebImage.framework */,
+				4C9240E82411F10D00903481 /* AFNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C901336E56B77F690F1B88FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CC7DF3717C1D7D11360B47A /* Pods-SampleApp.debug.xcconfig */,
+				0892DE70B9AA7856CBC26AB5 /* Pods-SampleApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C12CF08240CD59C00AEC9DF /* Build configuration list for PBXNativeTarget "SampleApp" */;
 			buildPhases = (
+				0AE9728CFBEBA272993E727A /* [CP] Check Pods Manifest.lock */,
 				4C12CEEB240CD59A00AEC9DF /* Sources */,
 				4C12CEEC240CD59A00AEC9DF /* Frameworks */,
 				4C12CEED240CD59A00AEC9DF /* Resources */,
+				C5911796866A2B3253141C0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C12CF0C240D174200AEC9DF /* icon.bundle in Resources */,
 				4C12CF02240CD59C00AEC9DF /* LaunchScreen.storyboard in Resources */,
 				4C12CEFF240CD59C00AEC9DF /* Assets.xcassets in Resources */,
 				4C12CEFD240CD59A00AEC9DF /* Main.storyboard in Resources */,
@@ -141,12 +301,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AE9728CFBEBA272993E727A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5911796866A2B3253141C0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C12CEEB240CD59A00AEC9DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C12CEFA240CD59A00AEC9DF /* ViewController.m in Sources */,
+				4C576CC02411FC8300D6A4EC /* SDWebImage.framework in Sources */,
+				4C12CF18240E562A00AEC9DF /* GTDetailViewController.m in Sources */,
+				4CA55AF624110D3500927A73 /* GTVideoCoverView.m in Sources */,
+				4C12CF1B240E6C5700AEC9DF /* GTDeleteCellView.m in Sources */,
+				4C12CF15240E351C00AEC9DF /* GTNormalTableViewCell.m in Sources */,
+				4C12CEFA240CD59A00AEC9DF /* GTNewsViewController.m in Sources */,
+				4C12CF0F240D3E4700AEC9DF /* GTVideoViewController.m in Sources */,
+				4C12CF20240F42C600AEC9DF /* GTListLoader.m in Sources */,
+				4C12CF27240F785D00AEC9DF /* GTListItem.m in Sources */,
+				4C12CF12240E34FF00AEC9DF /* GTRecommandViewController.m in Sources */,
 				4C12CEF4240CD59A00AEC9DF /* AppDelegate.m in Sources */,
 				4C12CF05240CD59C00AEC9DF /* main.m in Sources */,
 				4C12CEF7240CD59A00AEC9DF /* SceneDelegate.m in Sources */,
@@ -225,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,14 +498,48 @@
 		};
 		4C12CF09240CD59C00AEC9DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CC7DF3717C1D7D11360B47A /* Pods-SampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L64RWPWVCF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"$(SRCROOT)",
+				);
 				INFOPLIST_FILE = SampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$()";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+					"-all_load\n\n-all_load\n\n-all_load\n\n-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enjoy.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,14 +549,43 @@
 		};
 		4C12CF0A240CD59C00AEC9DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0892DE70B9AA7856CBC26AB5 /* Pods-SampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L64RWPWVCF;
+				ENABLE_BITCODE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
+					"$(SRCROOT)",
+				);
 				INFOPLIST_FILE = SampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$()";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+					"-all_load\n\n-all_load\n\n-all_load\n\n-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enjoy.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
