@@ -12,7 +12,6 @@
 		4C12CEFA240CD59A00AEC9DF /* GTNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CEF9240CD59A00AEC9DF /* GTNewsViewController.m */; };
 		4C12CEFD240CD59A00AEC9DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C12CEFB240CD59A00AEC9DF /* Main.storyboard */; };
 		4C12CEFF240CD59C00AEC9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C12CEFE240CD59C00AEC9DF /* Assets.xcassets */; };
-		4C12CF02240CD59C00AEC9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C12CF00240CD59C00AEC9DF /* LaunchScreen.storyboard */; };
 		4C12CF05240CD59C00AEC9DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF04240CD59C00AEC9DF /* main.m */; };
 		4C12CF0C240D174200AEC9DF /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C12CF0B240D174200AEC9DF /* icon.bundle */; };
 		4C12CF0F240D3E4700AEC9DF /* GTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF0E240D3E4700AEC9DF /* GTVideoViewController.m */; };
@@ -22,14 +21,16 @@
 		4C12CF1B240E6C5700AEC9DF /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF1A240E6C5700AEC9DF /* GTDeleteCellView.m */; };
 		4C12CF20240F42C600AEC9DF /* GTListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF1F240F42C600AEC9DF /* GTListLoader.m */; };
 		4C12CF27240F785D00AEC9DF /* GTListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12CF26240F785D00AEC9DF /* GTListItem.m */; };
-		4C576CC02411FC8300D6A4EC /* SDWebImage.framework in Sources */ = {isa = PBXBuildFile; fileRef = 4C9240EA2411F12800903481 /* SDWebImage.framework */; };
-		4C576CC42412021B00D6A4EC /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9240E82411F10D00903481 /* AFNetworking.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		4C9240EB2411F12800903481 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9240EA2411F12800903481 /* SDWebImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4C3EACE8244D2A05002D1F53 /* GTVideoToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3EACE7244D2A05002D1F53 /* GTVideoToolBar.m */; };
+		4C3EACEB244F4C98002D1F53 /* GTScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3EACEA244F4C98002D1F53 /* GTScreen.m */; };
+		4C62C3DE241F7E4A0068D037 /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C62C3DD241F7E4A0068D037 /* GTVideoPlayer.m */; };
 		4CA55AF624110D3500927A73 /* GTVideoCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA55AF524110D3500927A73 /* GTVideoCoverView.m */; };
+		4CADA646245586460061E264 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CADA645245586460061E264 /* Launch Screen.storyboard */; };
+		A4AFB07BB662020F085F6354 /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F60725B1A1EDE1947E6391B /* Pods_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0892DE70B9AA7856CBC26AB5 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		123D3832C547DE0FA7B09F0C /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4C12CEEF240CD59A00AEC9DF /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C12CEF2240CD59A00AEC9DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C12CEF3240CD59A00AEC9DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		4C12CEF9240CD59A00AEC9DF /* GTNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNewsViewController.m; sourceTree = "<group>"; };
 		4C12CEFC240CD59A00AEC9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C12CEFE240CD59C00AEC9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C12CF01240CD59C00AEC9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C12CF03240CD59C00AEC9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C12CF04240CD59C00AEC9DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C12CF0B240D174200AEC9DF /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
@@ -57,13 +57,19 @@
 		4C12CF1F240F42C600AEC9DF /* GTListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListLoader.m; sourceTree = "<group>"; };
 		4C12CF25240F785D00AEC9DF /* GTListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListItem.h; sourceTree = "<group>"; };
 		4C12CF26240F785D00AEC9DF /* GTListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListItem.m; sourceTree = "<group>"; };
-		4C576CC22411FD1500D6A4EC /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
-		4C9240E82411F10D00903481 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../Library/Developer/Xcode/DerivedData/SampleApp-fnfrlkuahbfxqidsgcprtrnqhtur/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
-		4C9240EA2411F12800903481 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../Library/Developer/Xcode/DerivedData/SampleApp-fnfrlkuahbfxqidsgcprtrnqhtur/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework"; sourceTree = "<group>"; };
-		4C9241052411F26700903481 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SampleApp.framework; path = "../../Library/Developer/Xcode/DerivedData/SampleApp-fnfrlkuahbfxqidsgcprtrnqhtur/Build/Products/Debug-iphoneos/Pods_SampleApp.framework"; sourceTree = "<group>"; };
+		4C3EACE6244D2A05002D1F53 /* GTVideoToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoToolBar.h; sourceTree = "<group>"; };
+		4C3EACE7244D2A05002D1F53 /* GTVideoToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoToolBar.m; sourceTree = "<group>"; };
+		4C3EACE9244F4C98002D1F53 /* GTScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTScreen.h; sourceTree = "<group>"; };
+		4C3EACEA244F4C98002D1F53 /* GTScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTScreen.m; sourceTree = "<group>"; };
+		4C62C3DC241F7E4A0068D037 /* GTVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoPlayer.h; sourceTree = "<group>"; };
+		4C62C3DD241F7E4A0068D037 /* GTVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoPlayer.m; sourceTree = "<group>"; };
 		4CA55AF424110D3500927A73 /* GTVideoCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoCoverView.h; sourceTree = "<group>"; };
 		4CA55AF524110D3500927A73 /* GTVideoCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoCoverView.m; sourceTree = "<group>"; };
-		7CC7DF3717C1D7D11360B47A /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4CADA645245586460061E264 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4CADA6582455992B0061E264 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CADA65C245599300061E264 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F60725B1A1EDE1947E6391B /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D630D04F363A5F7B44EC2292 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C576CC42412021B00D6A4EC /* AFNetworking.framework in Frameworks */,
-				4C9240EB2411F12800903481 /* SDWebImage.framework in Frameworks */,
+				A4AFB07BB662020F085F6354 /* Pods_SampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,11 +114,13 @@
 				4C12CEF6240CD59A00AEC9DF /* SceneDelegate.m */,
 				4C12CEFB240CD59A00AEC9DF /* Main.storyboard */,
 				4C12CEFE240CD59C00AEC9DF /* Assets.xcassets */,
-				4C12CF00240CD59C00AEC9DF /* LaunchScreen.storyboard */,
+				4CADA645245586460061E264 /* Launch Screen.storyboard */,
 				4C12CF03240CD59C00AEC9DF /* Info.plist */,
 				4C12CF04240CD59C00AEC9DF /* main.m */,
 				4C12CF10240E34FF00AEC9DF /* GTRecommandViewController.h */,
 				4C12CF11240E34FF00AEC9DF /* GTRecommandViewController.m */,
+				4C3EACE9244F4C98002D1F53 /* GTScreen.h */,
+				4C3EACEA244F4C98002D1F53 /* GTScreen.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -169,21 +176,16 @@
 			path = detail;
 			sourceTree = "<group>";
 		};
-		4C576CC12411FD1500D6A4EC /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-				4C576CC22411FD1500D6A4EC /* SDWebImage.framework */,
-			);
-			name = SDWebImage;
-			path = "../../Library/Developer/Xcode/DerivedData/SampleApp-fnfrlkuahbfxqidsgcprtrnqhtur/Build/Products/Debug-iphoneos/SDWebImage";
-			sourceTree = "<group>";
-		};
 		4CA55AED2411099200927A73 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
 				4CA55AF0241109AE00927A73 /* Model */,
 				4CA55AEF241109A800927A73 /* View */,
 				4CA55AEE2411099F00927A73 /* Controller */,
+				4C62C3DC241F7E4A0068D037 /* GTVideoPlayer.h */,
+				4C62C3DD241F7E4A0068D037 /* GTVideoPlayer.m */,
+				4C3EACE6244D2A05002D1F53 /* GTVideoToolBar.h */,
+				4C3EACE7244D2A05002D1F53 /* GTVideoToolBar.m */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -216,10 +218,9 @@
 		8587062C9146C47C8FE991AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C576CC12411FD1500D6A4EC /* SDWebImage */,
-				4C9241052411F26700903481 /* Pods_SampleApp.framework */,
-				4C9240EA2411F12800903481 /* SDWebImage.framework */,
-				4C9240E82411F10D00903481 /* AFNetworking.framework */,
+				4CADA65C245599300061E264 /* AFNetworking.framework */,
+				4CADA6582455992B0061E264 /* SDWebImage.framework */,
+				4F60725B1A1EDE1947E6391B /* Pods_SampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -227,8 +228,8 @@
 		C901336E56B77F690F1B88FF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7CC7DF3717C1D7D11360B47A /* Pods-SampleApp.debug.xcconfig */,
-				0892DE70B9AA7856CBC26AB5 /* Pods-SampleApp.release.xcconfig */,
+				123D3832C547DE0FA7B09F0C /* Pods-SampleApp.debug.xcconfig */,
+				D630D04F363A5F7B44EC2292 /* Pods-SampleApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -240,11 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C12CF08240CD59C00AEC9DF /* Build configuration list for PBXNativeTarget "SampleApp" */;
 			buildPhases = (
-				0AE9728CFBEBA272993E727A /* [CP] Check Pods Manifest.lock */,
+				EA3B03321653C2D2A55D0EB2 /* [CP] Check Pods Manifest.lock */,
 				4C12CEEB240CD59A00AEC9DF /* Sources */,
 				4C12CEEC240CD59A00AEC9DF /* Frameworks */,
 				4C12CEED240CD59A00AEC9DF /* Resources */,
-				C5911796866A2B3253141C0F /* [CP] Embed Pods Frameworks */,
+				83A182B300D204292EEDB330 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,8 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C12CF0C240D174200AEC9DF /* icon.bundle in Resources */,
-				4C12CF02240CD59C00AEC9DF /* LaunchScreen.storyboard in Resources */,
 				4C12CEFF240CD59C00AEC9DF /* Assets.xcassets in Resources */,
+				4CADA646245586460061E264 /* Launch Screen.storyboard in Resources */,
 				4C12CEFD240CD59A00AEC9DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +303,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AE9728CFBEBA272993E727A /* [CP] Check Pods Manifest.lock */ = {
+		83A182B300D204292EEDB330 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA3B03321653C2D2A55D0EB2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,23 +342,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5911796866A2B3253141C0F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleApp/Pods-SampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -348,13 +349,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C576CC02411FC8300D6A4EC /* SDWebImage.framework in Sources */,
+				4C3EACEB244F4C98002D1F53 /* GTScreen.m in Sources */,
 				4C12CF18240E562A00AEC9DF /* GTDetailViewController.m in Sources */,
 				4CA55AF624110D3500927A73 /* GTVideoCoverView.m in Sources */,
+				4C3EACE8244D2A05002D1F53 /* GTVideoToolBar.m in Sources */,
 				4C12CF1B240E6C5700AEC9DF /* GTDeleteCellView.m in Sources */,
 				4C12CF15240E351C00AEC9DF /* GTNormalTableViewCell.m in Sources */,
 				4C12CEFA240CD59A00AEC9DF /* GTNewsViewController.m in Sources */,
 				4C12CF0F240D3E4700AEC9DF /* GTVideoViewController.m in Sources */,
+				4C62C3DE241F7E4A0068D037 /* GTVideoPlayer.m in Sources */,
 				4C12CF20240F42C600AEC9DF /* GTListLoader.m in Sources */,
 				4C12CF27240F785D00AEC9DF /* GTListItem.m in Sources */,
 				4C12CF12240E34FF00AEC9DF /* GTRecommandViewController.m in Sources */,
@@ -373,14 +376,6 @@
 				4C12CEFC240CD59A00AEC9DF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4C12CF00240CD59C00AEC9DF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C12CF01240CD59C00AEC9DF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -498,7 +493,7 @@
 		};
 		4C12CF09240CD59C00AEC9DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CC7DF3717C1D7D11360B47A /* Pods-SampleApp.debug.xcconfig */;
+			baseConfigurationReference = 123D3832C547DE0FA7B09F0C /* Pods-SampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,14 +501,12 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/SampleApp-fnfrlkuahbfxqidsgcprtrnqhtur/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework\"",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/SampleApp-fnfrlkuahbfxqidsgcprtrnqhtur/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework\"",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
 					"$(SRCROOT)",
 				);
 				INFOPLIST_FILE = SampleApp/Info.plist;
@@ -521,11 +514,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$()";
+				LIBRARY_SEARCH_PATHS = "$(inherited)/**";
+				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-framework",
-					"\"AFNetworking\"",
 					"-framework",
 					"\"CoreGraphics\"",
 					"-framework",
@@ -533,13 +525,9 @@
 					"-framework",
 					"\"MobileCoreServices\"",
 					"-framework",
-					"\"SDWebImage\"",
-					"-framework",
 					"\"Security\"",
 					"-framework",
 					"\"SystemConfiguration\"",
-					"-ObjC",
-					"-all_load\n\n-all_load\n\n-all_load\n\n-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enjoy.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -549,17 +537,16 @@
 		};
 		4C12CF0A240CD59C00AEC9DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0892DE70B9AA7856CBC26AB5 /* Pods-SampleApp.release.xcconfig */;
+			baseConfigurationReference = D630D04F363A5F7B44EC2292 /* Pods-SampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L64RWPWVCF;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
 					"$(SRCROOT)",
 				);
 				INFOPLIST_FILE = SampleApp/Info.plist;
@@ -567,11 +554,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$()";
+				LIBRARY_SEARCH_PATHS = "$(inherited)/**";
+				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-framework",
-					"\"AFNetworking\"",
 					"-framework",
 					"\"CoreGraphics\"",
 					"-framework",
@@ -579,13 +565,9 @@
 					"-framework",
 					"\"MobileCoreServices\"",
 					"-framework",
-					"\"SDWebImage\"",
-					"-framework",
 					"\"Security\"",
 					"-framework",
 					"\"SystemConfiguration\"",
-					"-ObjC",
-					"-all_load\n\n-all_load\n\n-all_load\n\n-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enjoy.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,14 +8,23 @@
 
 #import "GTVideoCoverView.h"
 #import <AVFoundation/AVFoundation.h>
+#import "GTVideoPlayer.h"
+#import "GTVideoToolBar.h"
+
 @interface GTVideoCoverView()
 @property (strong,readwrite,nonatomic) UIImageView *coverView;
 @property (strong,readwrite,nonatomic) UIImageView *playButton;
 @property (strong,readwrite,nonatomic) NSString *videoUrl;
+@property (strong,readwrite,nonatomic) AVPlayerItem *videoItem;
 @property (strong,readwrite,nonatomic) AVPlayer *avPlayer;
 @property (strong,readwrite,nonatomic) AVPlayerLayer *playerLayer;
+@property (strong,readwrite,nonatomic) GTVideoToolBar *toolBar;
 
 @end
+
+
+// TODO: List
+// 1.监听视频播放的缓冲与进度  CMTime CMTimeMake
 
 @implementation GTVideoCoverView
 
@@ -23,65 +32,59 @@
     self = [super initWithFrame:frame];
     if(self) {
         [self addSubview:({
-            _coverView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+            _coverView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height - GTVideoToolBarHeight)];
             _coverView;
         })];
         [_coverView addSubview:({
             _playButton = [[UIImageView alloc] initWithFrame:CGRectMake((frame.size.width - 50)/2, (frame.size.height - 50)/2, 50, 50)];
+            _playButton.image = [UIImage imageNamed:@"icon.bundle/video_play@3x.png"];
             _playButton;
         })];
+        
+        [self addSubview:({
+            _toolBar = [[GTVideoToolBar alloc] initWithFrame:CGRectMake(0, _coverView.bounds.size.height , frame.size.width, GTVideoToolBarHeight)];
+            _toolBar;
+        })];
+        
         // 添加手势
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_tapToPlay)];
-        [self.coverView addGestureRecognizer:tapGesture];
-//
-//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_handlePlayEnd) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
-//
-//         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_handlePlayEnd) name:AVPlayerItemNewErrorLogEntryNotification object:nil];
+        [self addGestureRecognizer:tapGesture];        
+
         
     }
     return self;
 }
 
+// 学习到的点：
+// 1. cell自身需要保存一些必要的数据
+// 2. cell内部按钮k也可以做一些数据处理
 
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    NSLog(@"%@",change);
-}
 
 #pragma mark - private method
 - (void)_tapToPlay{
-    //播放实现思路：
-    // 1. AVASSET AVITem AVPLAyER
-    NSURL * videoUrl = [NSURL URLWithString:_videoUrl];
+
+//    NSURL * videourURL = [NSURL URLWithString:_videoUrl];
+//    AVAsset * asset = [AVAsset assetWithURL:videourURL];
+//
+//    _videoItem = [AVPlayerItem playerItemWithAsset:asset];
+//    _avPlayer = [AVPlayer playerWithPlayerItem:_videoItem];
+//
+//    _playerLayer = [AVPlayerLayer playerLayerWithPlayer:_avPlayer];
+//    _playerLayer.frame = _coverView.bounds;
+//    [_coverView.layer addSublayer:_playerLayer];
+//
+//    [_avPlayer play];
     
-//    AVAsset *asset = [AVAsset assetWithURL:videoUrl];
-//
-//    AVPlayerItem * videoItem = [[AVPlayerItem alloc] initWithAsset:asset];
-//    AVPlayer *avPlayer = [AVPlayer playerWithPlayerItem:videoItem];
+    [[GTVideoPlayer Player] playVideoWithUrl:_videoUrl attachView:_coverView];
 
-    _avPlayer = [AVPlayer playerWithURL:videoUrl];
-//
-    _playerLayer = [AVPlayerLayer playerLayerWithPlayer:_avPlayer];
-    _playerLayer.frame = _coverView.bounds;
-    [_coverView.layer addSublayer:_playerLayer];
-    [self.avPlayer addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
-    [_avPlayer play];
 }
 
-
-- (void)_handlePlayEnd{
-    NSLog(@"");
-}
 
 #pragma mark - public method
 - (void)layoutWithVideoCoverUrl:(NSString *)videoCoverUrl videoUrl:(NSString *)videoUrl {
     _coverView.image = [UIImage imageNamed:videoCoverUrl];
     _videoUrl = videoUrl;
-    _playButton.image = [UIImage imageNamed:@"icon.bundle/video_play@3x.png"];
+    [_toolBar layoutWithModel:nil];
 }
-
 
 @end

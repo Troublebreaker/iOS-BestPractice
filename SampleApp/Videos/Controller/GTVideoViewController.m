@@ -8,10 +8,11 @@
 
 #import "GTVideoViewController.h"
 #import "GTVideoCoverView.h"
+#import "GTVideoToolBar.h"
 
 @interface GTVideoViewController () <UICollectionViewDelegate,UICollectionViewDataSource>
-
-@end
+ 
+ @end
 
 @implementation GTVideoViewController
 
@@ -34,8 +35,10 @@
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc]init];
     flowLayout.minimumLineSpacing = 10;
     flowLayout.minimumInteritemSpacing = 10;
-    flowLayout.itemSize = CGSizeMake(self.view.frame.size.width , (self.view.frame.size.width )/16*9);
+    flowLayout.itemSize = CGSizeMake(self.view.frame.size.width , (self.view.frame.size.width )/16*9 + GTVideoToolBarHeight);
     UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
+    // 一般适配不同设备 设置为nerver 自己根据机型进行适配
+//    collectionView.contentInsetAdjustmentBehavior  =  UIScrollViewContentInsetAdjustmentNever;
     collectionView.delegate = self;
     collectionView.dataSource = self;
     [collectionView registerClass:[GTVideoCoverView class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
